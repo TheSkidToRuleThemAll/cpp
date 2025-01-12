@@ -17,18 +17,16 @@ bool isGameRunning=true;
      Sleep(500);
 
       cout<<"GO!\n";
-        Sleep(250);
-
-//ADVANCED STATS
+        Sleep(70);
 const clock_t begin_time = clock();
-//ADVANCED STATS
-
 score=100;
 while(score>0)
 {
     if(GetAsyncKeyState(VK_CONTROL))
     {
-        isGameRunning=false;
+      //confirm key has been pressed
+    isGameRunning=false;
+
 switch (score) {
         case 0 ... 10:  // In C++20, you can use the range feature
             cout << "Pfft! LOSER! Git gud lil bro,try harder" << endl;
@@ -53,13 +51,20 @@ switch (score) {
                 break;
         default:
             cout << "This was not supposed to happen" << endl;
-    }
+                }
+
+   //display stats -------------------------------------------------------------------
     cout<<"\nTime elapsed:" << float( clock () - begin_time ) / CLOCKS_PER_SEC<<"s";
     cout<<"\nScore:"<<score<<"/100"<<endl;
+   //display stats -------------------------------------------------------------------
+
+       //end game
         score=0;
     }
-score--;
+    score--;
     Sleep(10);
+
+    //message shown if time runs out and key has not been pressed
     if(score==0&&isGameRunning==1)
     {
     cout<<"You're so bad at this\n";
