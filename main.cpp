@@ -28,7 +28,7 @@ while(score>0)
     isGameRunning=false;
 
 switch (score) {
-        case 0 ... 10:  // In C++20, you can use the range feature
+        case 0 ... 10:  
             cout << "Pfft! LOSER! Git gud lil bro,try harder" << endl;
                 break;
         case 11 ... 30:
