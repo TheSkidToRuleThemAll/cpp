@@ -54,8 +54,8 @@ switch (score) {
             {
              //laughs at player if they tried to cheat
              cout<<"You really thought you were slick by just holding the CTRL key down,didn't you?";
-             Sleep(1500); //gives cheater time to read the message
-             isGameRunning=false; //closes game
+             Sleep(1500); 
+             isGameRunning=false; 
             }
                 break;
         case 11 ... 30:
@@ -104,18 +104,18 @@ switch (score) {
     char answer;
     cin>>answer;
     score=100;
-    system("cls"); //clears screen once player decides wether to keep playing so the interface is clean
+    system("cls"); //clears screen once player decides wether to keep playing so that the interface is clean
 
-    if(answer=='n' || answer=='N') //if user exits game
+    if(answer=='n' || answer=='N') //executes if user exits game
         {
-            if(cheater==false) //only greets players who didn't cheat
+            if(cheater==false) //only leaves a goodbye message to players who didn't cheat
         cout<<"See ya next time! :D";
         isGameRunning=false;
         }
 
         else isGameRunning=true; //restarts game,or if player has cheated,shuts down regardless
-        Sleep(300); //(not neccesary,the reset pops up too fast for my liking if turned off)
-if(cheater==true) {cout<<"out my face,LOSER! Don't even think i forgot you cheated!"; isGameRunning=false;} //fun little easter egg if cheater tries playing again
+        Sleep(300); //(not neccesary for game integrity,however program resets too fast for my liking if turned off)
+if(cheater==true) {cout<<"out my face,LOSER! Don't even think i forgot you cheated!"; isGameRunning=false;} //special message if player tries to restart game after cheating
 }
 
 
