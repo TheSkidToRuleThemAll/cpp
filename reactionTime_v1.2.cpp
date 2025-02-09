@@ -1,17 +1,4 @@
-/*
 
-Dev Note (Nedelcu Denis Cristian,LTCI)
-Hi,i'm too lazy to create a separate readme file so i decided to leave a message in here.
-What i wanted to say is that i used to play these sorts of games online when i was 11 or so (albeit with a way better looking UI)
-and i thought it would be cool to recreate this game,which i was into a while back.
-I couldn't find the original site so i made own program from scratch as a fun little experiment :]
-I know this isn't the best game in the world as i'm a newbie and the code is more likely than not very painful to read
-but then again,i made this project for myself and thought i should,regardless of how terrible i am at programming,
-release this project on my page as open-source.
-Without further ado,i will link my github below,and to you,my dear reader,i wish happy gaming! :D
-https://github.com/TheSkidToRuleThemAll
-
-*/
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
